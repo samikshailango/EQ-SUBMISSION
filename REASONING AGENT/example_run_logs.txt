@@ -1,0 +1,405 @@
+
+=== Test 1 ===
+Question: If a train leaves at 14:30 and arrives at 18:05, how long is the journey?
+{
+  "answer": "3 hours 35 minutes",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a time difference problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Parse the relevant times (HH:MM).\n2. Convert times to minutes since midnight.\n3. Compute the difference (handle midnight rollover).\n4. Convert back to hours/minutes.\n5. Validate the duration is non-negative and format the answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=215, executor gave value=215"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 2 ===
+Question: Alice has 3 red apples and twice as many green apples as red. How many apples does she have in total?
+{
+  "answer": "9",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a counting problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract each named entity's base quantity or relation.\n2. Resolve relationships into concrete values.\n3. Compute any requested sum/total.\n4. Validate all quantities are non-negative.\n5. Format the final answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=9.0, executor gave value=9.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 3 ===
+Question: What is 25 plus 47?
+{
+  "answer": "72",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a arithmetic problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract the numeric quantities and the operation implied.\n2. Compute the intermediate value(s) using arithmetic.\n3. Chain any subsequent operations in order.\n4. Validate the result makes sense (non-negative where relevant).\n5. Format the final short answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=72.0, executor gave value=72.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 4 ===
+Question: A store had 120 items and sold 45. How many are left?
+{
+  "answer": "75",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a arithmetic problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract the numeric quantities and the operation implied.\n2. Compute the intermediate value(s) using arithmetic.\n3. Chain any subsequent operations in order.\n4. Validate the result makes sense (non-negative where relevant).\n5. Format the final short answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=75, executor gave value=75"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 5 ===
+Question: If a movie starts at 19:15 and lasts 2 hours 10 minutes, what time does it end?
+{
+  "answer": "21:25",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a time difference problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Parse the relevant times (HH:MM).\n2. Convert times to minutes since midnight.\n3. Compute the difference (handle midnight rollover).\n4. Convert back to hours/minutes.\n5. Validate the duration is non-negative and format the answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=1285, executor gave value=1285"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 6 ===
+Question: Tom has 5 dogs and 3 times as many cats as dogs. How many pets does Tom have in total?
+{
+  "answer": "20",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a counting problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract each named entity's base quantity or relation.\n2. Resolve relationships into concrete values.\n3. Compute any requested sum/total.\n4. Validate all quantities are non-negative.\n5. Format the final answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=20.0, executor gave value=20.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 7 ===
+Question: What is 12 multiplied by 8?
+{
+  "answer": "96",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a arithmetic problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract the numeric quantities and the operation implied.\n2. Compute the intermediate value(s) using arithmetic.\n3. Chain any subsequent operations in order.\n4. Validate the result makes sense (non-negative where relevant).\n5. Format the final short answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=96.0, executor gave value=96.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 8 ===
+Question: A meeting needs 60 minutes. There are free slots: 09:00-09:30, 09:45-10:30, 11:00-12:00. Which slots can fit the meeting?
+{
+  "answer": "11:00-12:00",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a scheduling problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Parse required duration in minutes.\n2. Parse each free slot into start/end times.\n3. Compute duration of each slot in minutes.\n4. Filter slots whose duration >= required duration.\n5. Format the list of fitting slots as the answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=['11:00-12:00'], executor gave value=['11:00-12:00']"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 9 ===
+Question: A train leaves at 23:40 and arrives at 00:15 the next day. How long is the journey?
+{
+  "answer": "35 minutes",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a time difference problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Parse the relevant times (HH:MM).\n2. Convert times to minutes since midnight.\n3. Compute the difference (handle midnight rollover).\n4. Convert back to hours/minutes.\n5. Validate the duration is non-negative and format the answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=35, executor gave value=35"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 10 ===
+Question: Sarah has twice as many apples as Ben, and Ben has 3 fewer apples than Carol who has 10. How many apples does Sarah have?
+{
+  "answer": "14",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a counting problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract each named entity's base quantity or relation.\n2. Resolve relationships into concrete values.\n3. Compute any requested sum/total.\n4. Validate all quantities are non-negative.\n5. Format the final answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=14.0, executor gave value=14.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 11 ===
+Question: A meeting needs 45 minutes. Free slots: 09:00-09:40, 10:00-10:50, 13:15-14:00. Which slots fit?
+{
+  "answer": "10:00-10:50, 13:15-14:00",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a scheduling problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Parse required duration in minutes.\n2. Parse each free slot into start/end times.\n3. Compute duration of each slot in minutes.\n4. Filter slots whose duration >= required duration.\n5. Format the list of fitting slots as the answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=['10:00-10:50', '13:15-14:00'], executor gave value=['10:00-10:50', '13:15-14:00']"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+=== Test 12 ===
+Question: A store had 50 items, sold some, and now has -5 items. What went wrong?
+{
+  "answer": "Cannot be determined - the scenario is inconsistent (negative inventory).",
+  "status": "failed",
+  "reasoning_visible_to_user": "Could not produce a verified answer after 2 retry(ies). Reason: The question states a resulting count of -5, which is negative and impossible for a physical item count. The scenario is inconsistent.",
+  "metadata": {
+    "plan": "1. Extract the numeric quantities and the operation implied.\n2. Compute the intermediate value(s) using arithmetic.\n3. Chain any subsequent operations in order.\n4. Validate the result makes sense (non-negative where relevant).\n5. Format the final short answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": false,
+        "details": "independent re-solve gave value=None, executor gave value=None; independent solve flagged issues: ['The question states a resulting count of -5, which is negative and impossible for a physical item count. The scenario is inconsistent.']"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": false,
+        "details": "The question states a resulting count of -5, which is negative and impossible for a physical item count. The scenario is inconsistent."
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": false,
+        "details": "missing reasoning steps or a usable draft answer"
+      }
+    ],
+    "retries": 2
+  }
+}
+Verifier passed: False | Retried: True
+>>> OK <<<
+
+=== Test 13 ===
+Question: What is the difference between 100 and 37, then add 15?
+{
+  "answer": "78",
+  "status": "success",
+  "reasoning_visible_to_user": "Solved as a arithmetic problem and verified against an independent re-check.",
+  "metadata": {
+    "plan": "1. Extract the numeric quantities and the operation implied.\n2. Compute the intermediate value(s) using arithmetic.\n3. Chain any subsequent operations in order.\n4. Validate the result makes sense (non-negative where relevant).\n5. Format the final short answer.",
+    "checks": [
+      {
+        "check_name": "independent_resolve",
+        "passed": true,
+        "details": "independent re-solve gave value=78.0, executor gave value=78.0"
+      },
+      {
+        "check_name": "constraint_validation",
+        "passed": true,
+        "details": "no non-negativity / time-ordering / units violations found"
+      },
+      {
+        "check_name": "steps_consistency",
+        "passed": true,
+        "details": "steps and draft answer both present"
+      }
+    ],
+    "retries": 0
+  }
+}
+Verifier passed: True | Retried: False
+>>> OK <<<
+
+13/13 cases passed.

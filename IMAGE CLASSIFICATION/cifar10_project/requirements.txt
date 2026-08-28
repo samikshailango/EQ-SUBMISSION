@@ -1,0 +1,13 @@
+torch>=2.2
+torchvision>=0.17
+matplotlib>=3.7
+numpy<2.0
+pillow>=10.0
+
+# Optional Extensions
+onnx>=1.15            # ONNX export
+onnxruntime>=1.17      # ONNX inference
+onnxscript>=0.2         # required by torch's ONNX exporter internals
+fastapi>=0.110           # model serving API
+uvicorn[standard]>=0.29   # ASGI server for FastAPI
+python-multipart>=0.0.9   # file upload support for FastAPI

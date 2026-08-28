@@ -1,0 +1,66 @@
+CLOSING DISCLOSURE (Sample) -- Fixed Rate Purchase Loan
+Prepared for illustration purposes, modeled on the CFPB TILA-RESPA Closing
+Disclosure model form (H-25).
+
+Closing Date: 04/28/2026
+Disbursement Date: 04/28/2026
+Settlement Agent: Priya Raghavan, Anytown Title & Escrow LLC
+Property:    456 Somewhere Avenue, Anytown, ST 12345
+Sale Price:  $180,000
+Borrower:    Michael Jones and Mary Stone
+             4321 Randolph Drive, Anytown, ST 12345
+Seller:      Steve Cole and Amy Doe
+             456 Somewhere Avenue, Anytown, ST 12345
+Lender:      Example Lending Corp
+Loan ID #:   123456789
+MIC #:       000045501234567890123456789
+
+Loan Terms
+----------
+Loan Amount: $162,000
+Interest Rate: 3.875% (does not increase after closing)
+Monthly Principal & Interest: $761.78 (does not increase after closing)
+Prepayment Penalty: No
+Balloon Payment: No
+
+Loan Costs
+----------
+Total Loan Costs (Section A + B + C): $4,694.05
+  A. Origination Charges: $1,802.00
+  B. Services You Cannot Shop For: $672.00
+  C. Services You Can Shop For: $2,220.05
+
+Closing Cost Details
+----------------------
+Estimated Closing Costs: $8,054
+Cash to Close: $14,147.26 (paid from your account at closing)
+
+Summary of Borrower's Transaction
+------------------------------------
+Total Due from Borrower at Closing: $189,762.30
+Total Paid Already by or on Behalf of Borrower: $175,615.04
+Cash to Close: $14,147.26 (from borrower)
+
+Contact Information
+-----------------------
+Lender Contact:          David Kim, Loan Officer, Example Lending Corp
+                          david.kim@examplelending.com, (555) 019-2345
+Settlement Agent Contact: Priya Raghavan, Anytown Title & Escrow LLC
+                          priya.raghavan@anytowntitle.com, (555) 019-8877
+Real Estate Broker (B):  Carlos Mendez, Homefinder Realty
+                          carlos.mendez@homefinderrealty.com, (555) 019-4411
+
+Other Disclosures
+----------------------
+Appraised Property Value: $182,000
+Assumption: Should you sell or transfer this property, this loan is not
+assumable on the original terms.
+Demand Feature: This loan does not have a demand feature.
+Late Payment: If your payment is more than 15 days late, your lender will
+charge a late fee of 5% of the monthly principal and interest payment.
+Negative Amortization: Under your loan terms, you are not scheduled to
+make monthly payments that do not pay all the interest due that month.
+Escrow Account: Your loan requires an escrow account, which is a financial
+account your lender or servicer uses to pay certain property costs on your
+behalf. Estimated total amount over the first year of your loan is
+$2,476.80, allocated to Property Taxes and Homeowner's Insurance.
