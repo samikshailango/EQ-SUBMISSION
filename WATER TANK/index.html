@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Water Tank — Trapped Rainwater Visualizer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="blueprint-grid" aria-hidden="true"></div>
+
+<main class="page">
+
+  <header class="masthead">
+    <div class="masthead__eyebrow">SECTION VIEW · ELEVATION DIAGRAM</div>
+    <h1 class="masthead__title">Water&nbsp;Tank</h1>
+    <p class="masthead__sub">Enter block heights along a cross-section. Water fills each basin up to the shorter of its two retaining walls, then spills toward the lower side.</p>
+  </header>
+
+  <section class="panel" aria-label="Input controls">
+    <form id="tank-form" class="input-row">
+      <label class="input-row__field">
+        <span class="input-row__label">Block heights</span>
+        <input
+          id="heights-input"
+          name="heights"
+          type="text"
+          inputmode="text"
+          autocomplete="off"
+          spellcheck="false"
+          placeholder="0,4,0,0,0,6,0,6,4,0"
+        />
+      </label>
+
+      <label class="input-row__field input-row__field--select">
+        <span class="input-row__label">Preset</span>
+        <select id="example-select">
+          <option value="">Custom</option>
+          <option value="reference">Reference example</option>
+          <option value="classic">Classic (6 blocks)</option>
+          <option value="flat">Flat — no basin</option>
+          <option value="no-water">Ascending — no basin</option>
+          <option value="single-well">Single well</option>
+        </select>
+      </label>
+
+      <button type="button" id="random-btn" class="btn btn--ghost">Randomize</button>
+    </form>
+
+    <p id="error-box" class="error-box" role="alert" hidden></p>
+  </section>
+
+  <section class="panel panel--result" aria-label="Result">
+    <div class="result-bar">
+      <div class="readout">
+        <span class="readout__label">Trapped water</span>
+        <span id="total-readout" class="readout__value">—</span>
+      </div>
+
+      <div id="view-toggle" class="view-toggle" role="group" aria-label="Diagram view">
+        <button type="button" data-view="svg" class="active">Elevation</button>
+        <button type="button" data-view="table">Table</button>
+      </div>
+    </div>
+
+    <div class="diagram-frame">
+      <div id="diagram" class="diagram"></div>
+    </div>
+
+    <div class="legend">
+      <span class="legend__item"><i class="legend__swatch legend__swatch--block"></i>Block</span>
+      <span class="legend__item"><i class="legend__swatch legend__swatch--water"></i>Water</span>
+    </div>
+  </section>
+
+  <footer class="footnote">
+    Algorithm: prefix/suffix max profile for rendering, cross-checked against an O(1)-space two-pointer sweep for the total. Both run in O(n) time.
+  </footer>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
